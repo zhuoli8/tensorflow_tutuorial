@@ -48,7 +48,16 @@ model.fit(train_images, train_labels, epochs = 5)
 
 # print('tested acc', test_acc)
 
-prediction = model.predict(test_images)
+prediction = model.predict(test_images[7])
+
+#for loop to show the actual image to show testing image:
+for i in range(5):
+    plt.grid(False)
+    plt.imshow(test_images[i], cmap = plt.cm.binary)
+    plt.xlabel('actual: '+ class_names[test_labels[i]])
+    plt.title('Prediction: '+ class_names[np.argmax(prediction[i])])
+    plt.show()
+    
 print(class_names[np.argmax(prediction[0])])
 
 
