@@ -8,7 +8,7 @@ YES......... 2.0.0 works.
 '''
 import tensorflow as tf
 from tensorflow import keras
-import numpy as np
+import numpy as np #there are some errors because of old version of numpy
 import matplotlib.pyplot as plt
 
 
@@ -59,6 +59,60 @@ for i in range(5):
     plt.show()
     
 print(class_names[np.argmax(prediction[0])])
+
+
+
+#1:07:24+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
